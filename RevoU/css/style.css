@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+}
+
+.header img {
+    width: 50px;
+    height: auto;
+    position: left;
+}
+
+.header ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none; 
+    position: right;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 15px;
+    margin-left: 5px;
+    font-size: 15px;
+    transition: background-color 0.3s ease-in, transform 0.2s ease-out;
+}
+
+.nav a:hover {
+    background-color: #ffeb3b;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        display: flex;
+        padding: 10px;
+    }
+
+    .header ul {
+        display: flex;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* MAIN */
+/* Home-page */
+.hpage {
+    text-align: center;
+    justify-content: center;
+    padding: 100px;
+    background: #eeefee;
+}
+
+.hpage h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: center;       
+    font-weight: bold;
+}
+
+.banner img {
+    width: 100%;
+    margin: 100px 0px;
+    height: auto;
+
+}
+
+@media (max-width: 768px) {
+    .banner img {
+        width: 320px;
+    }
+
+    .hpage h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Our Profile */
+.ourprofile {
+    background: #ffeb3b;
+    padding-top: 20px;
+}
+
+.ourprofile h2 {
+    font-size: 3rem;
+}
+
+.ourprofile .about {
+    text-align: center;
+    padding: 10px;
+}
+
+.visi-misi {
+    display: flex;             
+    padding: 60px 10%;         
+    gap: 50px;                 
+    align-items: flex-start;
+}
+
+.visi, .misi {
+    flex: 1;                
+}
+
+.visi-misi h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;       
+    font-weight: bold;
+}
+
+.visi p {
+    text-align: center;       
+    line-height: 1.6;        
+    font-size: 18px;
+}
+
+
+.misi ul {
+    list-style-type: disc;     
+    padding-left: 20px;
+}
+
+.misi li {
+    margin-bottom: 10px;      
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .visi-misi {
+        flex-direction: column; 
+        text-align: center;
+        padding: 40px 5%;
+    }
+    
+    .misi ul {
+        text-align: left;     
+    }
+
+    .ourprofile h2 {
+        font-size: 2rem;
+    }
+
+    .visi-misi h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Headquarter */
+.headquarter {
+    padding: 30px 10%;
+}
+
+.headquarter h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.hq-container {
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 10%;
+}
+
+.circle {
+    width: 250px;
+    height: 250px;
+    border: 3px solid #ffeb3b;
+    border-radius: 50%; 
+    margin: 0 auto 20px;
+    overflow: hidden;   
+}
+
+.circle img {
+    width: 100%;       
+    height: 100%;       
+    object-fit: cover;  
+}
+
+.hq-item p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .hq-container {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    .headquarter h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Message Us */
+.form {
+    display: flex;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    align-items: stretch;
+    background: white;
+}
+
+.messageuspage {
+    padding: 30px 10%;
+    background: #ffffe6;
+}
+
+.messageuspage h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.messageuspage p {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#form, .result-box {
+    flex: 1; /* Membagi dua kolom sama rata */
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* Mengatur input agar rapi ke bawah */
+#form label {
+    display: inline-block;
+    width: 120px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#form input[type="text"],
+#form input[type="date"],
+#form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+#form button {
+    width: 30%;
+    padding: 20px ;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    background-color: #ffeb3b;
+    border: 0;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    border: 2px solid white;
+    transition: background-color 0.3s ease-in, transform 0.2s ease-out;
+}
+
+#form button:hover {
+    background-color: white;
+    border: 2px solid #ffeb3b;
+    color: #ffeb3b; /* Warna teks jadi kuning saat hover */
+}
+
+.result-box {
+    padding: 30px;
+    background-color: #ffeb3b; /* Beri warna background tipis agar beda dengan form */
+    display: none;
+    flex-direction: column;
+    justify-content: center; /* Mengetengahkan teks secara vertikal */
+    border-radius: 0;
+}
+
+.result-box p {
+    margin-bottom: 12px; /* Memberi jarak antar baris data */
+    border-bottom: 1px dashed grey; /* Garis bawah putus-putus biar estetik */
+    padding-bottom: 8px;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+
+.result-box span {
+    font-style: italic; /* Membedakan label dan isi data */
+}
+
+@media (max-width: 768px) {
+    .form {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    #form button {
+        width: 50%;
+    }
+}
+
+
+
+
+
+
+/* FOOTER */
+.footer p {
+    text-align: right;
+    padding: 30px;
+}
+
+@media (max-width: 768px) {
+    .footer p {
+        text-align: right;
+        padding: 20px;
+        font-size: 15px;
+    }
+}
