@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Steven Berlin</title>
+
+    <!-- CSS External -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Tailwind CSS CDN -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+</head>
+
+<body>
+    <!-- Header Content -->
+    <header class="header">
+        <!-- Logo -->
+        <img src="https://uploads-ssl.webflow.com/61af164800e38cf1b6c60b55/62bbfbb189b700fc937e2e70_Logo-RevoU-5.png"></img>
+
+        <!-- Navigation Menu -->
+        <nav class="nav">
+            <a class="border rounded p-2" href="#home-page">Home</a>
+            <a class="border rounded p-2" href="#our-profile-page">Our Profile</a>
+            <a class="border rounded p-2" href="#portfolio-page">Portfolio</a>
+            <a class="border rounded p-2" href="#message-us-page">Message Us</a>
+        </nav>
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Page -->
+        <section id="home-page" class="hpage">
+            <h2 class="text-xl font-bold" id="welcome-speech">Welcome to Our Website</h2>
+            <p class="mt-2">We are glad to have you here. Explore our services and offerings.</p>
+            <div class="banner">
+                <img src="https://static.wixstatic.com/media/ab5dd5_ca818dd0745f417a90f42f55ddebb669~mv2.png" alt="Banner">
+            </div>
+        </section>
+
+   
+
+        <!-- Our Profile Page -->
+        <section id="our-profile-page" class="ourprofile">
+            <h2 class="about">About RevoU Company</h2>
+            <p class="about">RevoU adalah perusahaan edutech terkemuka atau platform pendidikan online di Indonesia, yang didirikan pada tahun 2019.</p>
+            <div class="visi-misi">
+                <div class="visi">
+                    <h3>Vision</h3>
+                    <p>RevoU berfokus pada pelatihan intensif (bootcamp) untuk meningkatkan keterampilan digital, seperti Digital Marketing, 
+                        Data Analytics, Software Engineering, dan Product Management agar siswa siap kerja di industri teknologi.</p>
+                </div>
+
+                <div class="misi">
+                    <h3>Mision</h3>
+                    <ul>
+                        <li>Menjadi platform pendidikan tinggi dan pengembangan keterampilan profesional terbesar 
+                            di Asia Tenggara yang mengubah hidup dengan menyediakan pendidikan relevan, berbasis proyek, dan intensif</li>
+                        <li>Transformasi Karier: Membantu individu untuk memulai, beralih, atau mempercepat karier mereka di industri digital.</li>
+                        <li>Pembelajaran Berbasis Proyek: Berfokus pada praktik langsung dengan kurikulum yang dirancang oleh para praktisi industri.</li>
+                        <li>Mentorship & Dukungan Karier: Menyediakan sesi bimbingan karier pribadi dan komunitas belajar yang suportif.</li>
+                        <li>Aksesibilitas: Menawarkan opsi pembelajaran yang fleksibel dan rencana pembayaran yang terjangkau (termasuk opsi Perjanjian Pembagian Pendapatan/Income Share Agreement).</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Our Headquarter Page -->
+        <section class="headquarter">
+            <h2 class="text-xl font-bold">Our Headquarter</h2>
+            <div class="hq-container">
+            <div class="hq-item">
+                <div class="circle">
+                    <img src="https://cdn.prod.website-files.com/61af164800e38cf1b6c60b55/660f9b039b2ee6db70267e44_ciputra-1.webp">
+                </div>
+                <p>Jakarta</p>
+            </div>
+            <div class="hq-item">
+                <div class="circle">
+                    <img src="https://cdn.prod.website-files.com/61af164800e38cf1b6c60b55/660f9b039b2ee6db70267e44_ciputra-1.webp">
+                </div>
+                <p>Jakarta</p>
+            </div>
+            <div class="hq-item">
+                <div class="circle">
+                    <img src="https://cdn.prod.website-files.com/61af164800e38cf1b6c60b55/660f9b039b2ee6db70267e44_ciputra-1.webp">
+                </div>
+                <p>Jakarta</p>
+            </div>
+        </div> 
+        </section>
+
+        <!-- Message Us Page -->
+        <section id="message-us-page" class="messageuspage">
+            <header>
+                <h2>Message Us</h2>
+                <p>Have questions or want to work with us? Send us a message and we'll get back to you
+                    promptly.</p>
+            </header>
+
+            <div class="form">
+                <form id="form">
+                    <label>Nama</label><br>
+                    <input type="text" id="input-name" placeholder="Nama" required> <br>
+    
+                    <label>Tanggal Lahir</label><br>
+                    <input type="date" id="input-birth" required> <br>
+    
+                    <label>Jenis Kelamin</label><br>
+                    <input type="radio" name="gender" value="Laki-Laki" required>Laki-Laki
+                    <input type="radio" name="gender" value="Perempuan">Perempuan <br> <br>
+    
+                    <label>Pesan</label> <br>
+                    <textarea id="message" required></textarea> <br>
+    
+                    <button type="submit">Send Message</button>
+                </form>
+    
+                <div class="result-box">
+                    <p><strong>Current time :</strong> <span id="current-time"></span></p>
+                    <p><strong>Nama :</strong> <span id="output-name"></span></p>
+                    <p><strong>Tanggal Lahir :</strong> <span id="output-birth"></span></p>
+                    <p><strong>Jenis Kelamin :</strong> <span id="output-gender"></span></p>
+                    <p><strong>Pesan :</strong> <span id="output-message"></span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Content -->
+    <footer class="footer">
+        <p>© 2026 RevoU Company. All rights reserved. CodingCamp-09Feb2026</p>
+    </footer>
+
+    <!-- JavaScript External -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
