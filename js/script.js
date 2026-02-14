@@ -12,7 +12,7 @@ function welcomeMessage() {
     }
 
     // Display Welcome Message
-    document.getElementById('welcome-speech').innerHTML = `Hello, ${name}! Welcome to Yama Company.`;
+    document.getElementById('welcome-speech').innerHTML = `Hello, ${name}! Welcome to RevoU Company.`;
 }
 
 function validateForm() {
